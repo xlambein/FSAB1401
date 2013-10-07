@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=a\ b
+comment0.target=long\ gcd(long,\ long)
+comment1.params=x\ e
+comment1.target=long\ pow(long,\ int)
+comment2.params=x\ e
+comment2.target=long\ root(long,\ int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
