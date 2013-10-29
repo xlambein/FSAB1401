@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=condition\ text
+comment0.target=void\ test(boolean,\ java.lang.String)
+comment0.text=\n\ @pre\ -\n\ @post\ prints\ text\ if\ condition\ is\ false.\n
+comment1.params=
+comment1.target=void\ runTests()
+numComments=2

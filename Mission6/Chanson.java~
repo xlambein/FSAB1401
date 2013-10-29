@@ -1,13 +1,7 @@
-/**
- * Stores a song's information (author, title, length).
- * 
- * @author Xavier Lambein & Victor Lecomte
- * @version 2013-10-29
- */
 class Chanson
 {
-    private String titre, auteur;
-    private Temps duree;
+    String titre, auteur;
+    Temps duree;
     
     public Chanson(String t, String a, Temps d)
     {

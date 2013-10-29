@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=h\ m\ s
+comment0.target=Temps(int,\ int,\ int)
+comment1.params=
+comment1.target=int\ getSecondes()
+comment10.params=t
+comment10.target=void\ ajouter(Temps)
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=int\ getMinutes()
+comment3.params=
+comment3.target=int\ getHeures()
+comment4.params=s
+comment4.target=void\ setSecondes(int)
+comment5.params=m
+comment5.target=void\ setMinutes(int)
+comment6.params=h
+comment6.target=void\ setHeures(int)
+comment7.params=
+comment7.target=int\ toSecondes()
+comment8.params=t
+comment8.target=int\ delta(Temps)
+comment9.params=t
+comment9.target=boolean\ apres(Temps)
+numComments=12

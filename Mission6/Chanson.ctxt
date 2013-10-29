@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=t\ a\ d
+comment0.target=Chanson(java.lang.String,\ java.lang.String,\ Temps)
+comment1.params=
+comment1.target=java.lang.String\ getTitre()
+comment2.params=
+comment2.target=java.lang.String\ getAuteur()
+comment3.params=
+comment3.target=Temps\ getDuree()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

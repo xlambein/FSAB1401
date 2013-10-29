@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=album\ count\ dureeTotale
+comment0.target=void\ printAlbum(Chanson[],\ int,\ Temps)
+comment0.text=\n\ @pre\ -\n\ @post\ Prints\ an\ album's\ length\ and\ songs\ and\ increments\ albumCount.\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ @pre\ If\ it\ exists,\ args[0]\ contains\ a\ valid\ filename.\n\ @post\ Organizes\ the\ songs\ provided\ in\ the\ file\ args[0]\ or\ in\ the\ standard\ input.\n\ \ \ \ \ \ \ Prints\ the\ songs\ as\ albums\ of\ max.\ 75min\ or\ 100\ songs.\n
+numComments=2
