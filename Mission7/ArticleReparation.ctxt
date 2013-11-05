@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=duree
+comment0.target=ArticleReparation(double)
+comment0.text=\n\ @pre\ \ description\ \!\=\ null\n\ @post\ cree\ un\ article\ en\ r\u00E9paration\ avec\ {description},\ {prix}\ et\ {duree}.\n
+comment1.params=
+comment1.target=java.lang.String\ getDescription()
+comment1.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ description\ de\ cette\ reparation.\n
+comment2.params=
+comment2.target=double\ getPrix()
+comment2.text=\n\ @pre\ \ -\n\ @post\ retourne\ le\ prix\ (HTVA)\ de\ cette\ reparation.\n
+numComments=3

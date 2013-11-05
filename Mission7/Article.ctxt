@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Article()
+comment0.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ article\ vide.\ \ Utilise\ par\ les\ extensions\n\ \ \ \ \ \ \ qui\ n'utilisent\ pas\ {description}\ et\ {prix}.\n
+comment1.params=description\ prix
+comment1.target=Article(java.lang.String,\ double)
+comment1.text=\n\ @pre\ \ description\ \!\=\ null\n\ @post\ cree\ un\ article\ avec\ {description}\ et\ {prix}.\n
+comment2.params=
+comment2.target=java.lang.String\ getDescription()
+comment2.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ description\ de\ cet\ article.\n
+comment3.params=
+comment3.target=double\ getPrix()
+comment3.text=\n\ @pre\ \ -\n\ @post\ retourne\ le\ prix\ (HTVA)\ de\ cet\ article.\n
+comment4.params=
+comment4.target=double\ getTVA()
+comment4.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ TVA\ sur\ cet\ article.\n
+comment5.params=
+comment5.target=double\ getPrixTVAC()
+comment5.text=\n\ @pre\ \ -\n\ @post\ retourne\ le\ prix\ TVAC\ de\ cet\ article.\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\n\ @pre\ \ -\n\ @post\ retourne\ un\ texte\ decrivant\ cet\ article,\ au\ format\:\n\ \ \ \ \ \ \ "{description}\:\ {prix}".\n
+numComments=7

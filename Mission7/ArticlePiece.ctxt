@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=piece\ nombreDePieces
+comment0.target=ArticlePiece(Piece,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ ArticlePiece\n
+comment1.params=
+comment1.target=Piece\ getPiece()
+comment1.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ piece\ de\ cet\ article.\n
+comment2.params=
+comment2.target=int\ getNombreDePieces()
+comment2.text=\n\ @pre\ \ -\n\ @post\ retourne\ le\ nombre\ de\ pieces\ de\ cet\ article.\n
+comment3.params=
+comment3.target=double\ getMasseTotale()
+comment3.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ masse\ totale\ des\ pieces\ de\ cet\ article.\n
+comment4.params=
+comment4.target=java.lang.String\ getDescription()
+comment4.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ description\ de\ cet\ article.\n
+comment5.params=
+comment5.target=double\ getPrix()
+comment5.text=\n\ @pre\ \ -\n\ @post\ retourne\ le\ prix\ (HTVA)\ de\ cet\ article.\n
+comment6.params=
+comment6.target=double\ getTVA()
+comment6.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ TVA\ sur\ cet\ article.\n
+numComments=7

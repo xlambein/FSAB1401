@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.params=description\ prix\ masse\ fragile\ tvaReduite
+comment0.target=Piece(java.lang.String,\ double,\ double,\ boolean,\ boolean)
+comment0.text=\n\ @pre\ \ description\ \!\=\ null\n\ @post\ cree\ une\ piece\ avec\ {description},\ {prix},\ {masse},\ {fragile},\ {tvaReduite}.\n
+comment1.params=description\ prix
+comment1.target=Piece(java.lang.String,\ double)
+comment1.text=\n\ @pre\ \ description\ \!\=\ null\n\ @post\ cree\ une\ piece\ avec\ {description}\ et\ {prix}.\n
+comment2.params=
+comment2.target=java.lang.String\ getDescription()
+comment2.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ description\ de\ cette\ piece.\n
+comment3.params=
+comment3.target=double\ getPrix()
+comment3.text=\n\ @pre\ \ -\n\ @post\ retourne\ le\ prix\ (HTVA)\ de\ cette\ piece.\n
+comment4.params=
+comment4.target=double\ getMasse()
+comment4.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ masse\ de\ cette\ piece.\n
+comment5.params=
+comment5.target=boolean\ isFragile()
+comment5.text=\n\ @pre\ \ -\n\ @post\ retourne\ la\ fragilite\ de\ cette\ piece.\n
+comment6.params=
+comment6.target=boolean\ isTVAReduite()
+comment6.text=\n\ @pre\ \ -\n\ @post\ retourne\ si\ la\ piece\ a\ une\ TVA\ reduite.\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\n\ @pre\ \ -\n\ @post\ retourne\ un\ texte\ decrivant\ cet\ article,\ au\ format\:\n\ \ \ \ \ \ \ "{description}\:\ {prix}".\n
+comment8.params=obj
+comment8.target=boolean\ equals(java.lang.Object)
+numComments=9

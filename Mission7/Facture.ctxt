@@ -1,0 +1,35 @@
+#BlueJ class context
+comment0.params=reference\ articles
+comment0.target=Facture(java.lang.String,\ Article[])
+comment0.text=\n\ @pre\ \ reference\ \!\=\ null\n\ @post\ A\ cree\ une\ facture\ avec\ {description}\ et\ {articles}.\n
+comment1.params=
+comment1.target=void\ printFacture()
+comment1.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ la\ facture.\n
+comment10.params=pce
+comment10.target=int\ getNombre(Piece)
+comment10.text=\n\ @pre\ \ pce\ \!\=\ null\n\ @post\ Retourne\ le\ nombre\ d'exemplaires\ de\ {pce}\ factures,\n\ \ \ \ \ \ \ en\ totalisant\ sur\ plusieurs\ articles\ si\ necessaire.\n
+comment2.params=
+comment2.target=void\ printEntete()
+comment2.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ l'en-tete\ de\ la\ facture,\ comprenant\ le\ descriptif\n\ \ \ \ \ \ \ et\ les\ tetes\ de\ colonnes.\n
+comment3.params=
+comment3.target=void\ printEnteteLivraison()
+comment3.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ l'en-tete\ de\ livraison\ de\ la\ facture,\ comprenant\ le\ descriptif\n\ \ \ \ \ \ \ et\ les\ tetes\ de\ colonnes.\n
+comment4.params=
+comment4.target=void\ printBarre()
+comment4.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ une\ barre\ sur\ la\ largeur\ de\ la\ facture.\n
+comment5.params=art
+comment5.target=void\ printArticle(Article)
+comment5.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ une\ ligne\ de\ facture\ pour\ l'article\ {art}.\n
+comment6.params=art
+comment6.target=void\ printArticleLivraison(ArticlePiece)
+comment6.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ une\ ligne\ de\ facture\ pour\ l'article\ {art}.\n
+comment7.params=prix\ tva
+comment7.target=void\ printTotaux(double,\ double)
+comment7.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ une\ ligne\ de\ facture\ avec\ les\ totaux\ {prix}\ et\ {tva}.\n
+comment8.params=nombreArticles\ nombrePieces\ masse
+comment8.target=void\ printTotauxLivraison(int,\ int,\ double)
+comment8.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ une\ ligne\ de\ livraison\ avec\ les\ totaux\ {nombreArticles},\ {nombrePieces}\ et\ {masse}.\n
+comment9.params=
+comment9.target=void\ printLivraison()
+comment9.text=\n\ @pre\ \ -\n\ @post\ A\ imprime\ une\ liste\ de\ livraison,\ comprenant\ toutes\ les\n\ \ \ \ \ \ \ pieces\ facturees\ avec\ leur\ poids.\n
+numComments=11
