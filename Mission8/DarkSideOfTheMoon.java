@@ -2,15 +2,17 @@ import java.awt.Graphics;
 import java.awt.Color;
 
 /**
- * Un exemple de figure
+ * La pochette de l'album Dark Side of the Moon de Pink Floyd.
  * 
- * @author Charles Pecheur
- * @version 3 Nov 2012
+ * @author Xavier Lambein & Victor Lecomte
+ * @version 2013-11-14
  */
 public class DarkSideOfTheMoon implements Shape
 {
     private int x;
     private int y;
+    
+    private final int SIDE = 300;
     
     /**
      * @pre  -
@@ -21,14 +23,29 @@ public class DarkSideOfTheMoon implements Shape
         this.y = y;
     }
     
-    private void drawLines(Graphics g, int x1, int y1, int x2, int y2, int n, Color color) {
-        int factor = 1;
-        if(y1 < y2)
-            factor = -1;
+    /**
+     * @pre  {@code g} est initialise
+     * @post dessine une ligne de couleur {@code color} dans {@code g}, partant du point ({@code x}, {@code y}),
+     * de longueur {@code length}, à un angle {@code angle} en radians.
+     */
+    private void drawLine(Graphics g, double x, double y, double angle, int length, Color color) {
+        double x2 = length*Math.cos(angle);
+        double y2 = length*Math.sin(angle);
         
         g.setColor(color);
+        (new Segment((int)Math.round(x), (int)Math.round(y), (int)(x+x2), (int)Math.round(y+y2))).draw(g);
+    }
+    
+    /**
+     * @pre  {@code g} est initialise
+     * @post dessine {@code n} lignes parallèles de couleur {@code color} dans {@code g},
+     * de longueur {@code length}, à un angle {@code angle} en radians, espacées de {@code space},
+     * et dont la première part du point ({@code x}, {@code y}).
+     */
+    private void drawLines(Graphics g, double x, double y, double angle, int length, int n, int space, Color color) {
+        g.setColor(color);
         for(int i = 0; i < n; i++)
-            (new Segment(x1+1*i*factor,y1-2*i,x2+1*i*factor,y2-2*i)).draw(g);
+            drawLine(g, x-i*space*Math.sin(angle), y+i*space*Math.cos(angle), angle, length, color);
     }
     
     /**
@@ -36,26 +53,57 @@ public class DarkSideOfTheMoon implements Shape
      * @post dessine cette figure sur {@code g}. 
      */
     public void draw(Graphics g) {
-        (new Equilateral(x, y, 100, Math.PI/2)).draw(g); // Dessine le triangle central
-        (new Equilateral(x, y, 100-4, Math.PI/2)).draw(g);
+        // Dessiner le fond noir
+        g.setColor(Color.BLACK);
+        g.fillRect(getXMin(), getYMin(), SIDE, SIDE);
         
-        drawLines(g, x-150, y+20, x-30, y-50, 3, Color.BLACK);
-            
-        (new Triangle(x-29, y-53, x+17, y-70, x+39, y-32)).draw(g);
+        // L'angle des traits de lumière
+        final double ANGLE = Math.toRadians(30);
         
-        drawLines(g, x+20, y-66, x+140, y+1, 3,  Color.RED);
-        drawLines(g, x+24, y-59, x+144, y+8, 3,  Color.ORANGE);
-        drawLines(g, x+28, y-52, x+148, y+15, 3, Color.YELLOW);
-        drawLines(g, x+32, y-45, x+152, y+22, 3, Color.GREEN);
-        drawLines(g, x+36, y-38, x+156, y+29, 3, Color.BLUE);
-        drawLines(g, x+40, y-31, x+160, y+36, 3, Color.MAGENTA);
+        // Dessiner le double triangle central
+        (new Equilateral(x, y, 100, Math.PI/2, Color.WHITE)).draw(g);
+        (new Equilateral(x, y, 100-4, Math.PI/2, Color.WHITE)).draw(g);
+        
+        // Dessiner les trois traits blancs à gauche
+        drawLines(g, x-26, y-52, Math.PI-ANGLE, 130, 3, 1, Color.WHITE);
+        
+        // Dessiner le double triangle intérieur
+        (new Triangle(x-28, y-53, x+17, y-70, x+36, y-36, Color.WHITE)).draw(g);
+        (new Triangle(x-27, y-53, x+16, y-69, x+35, y-37, Color.WHITE)).draw(g);
+        
+        // Dessiner les 3*6 traits de couleur à droite
+        drawLines(g, x+18, y-70, ANGLE, 130, 3, 1, Color.RED);
+        drawLines(g, x+22, y-64, ANGLE, 130, 3, 1, Color.ORANGE);
+        drawLines(g, x+25, y-58, ANGLE, 130, 3, 1, Color.YELLOW);
+        drawLines(g, x+29, y-52, ANGLE, 130, 3, 1, Color.GREEN);
+        drawLines(g, x+32, y-46, ANGLE, 130, 3, 1, Color.BLUE);
+        drawLines(g, x+36, y-40, ANGLE, 130, 3, 1, Color.MAGENTA);
     }
     
-    public static void main(String args[])
+    public int getXMin()
     {
-        //Shape shape = new MyShape(30);
-        Shape shape = new Equilateral(200, 200, 200, Math.PI/2);
-        DrawPanel panel = new DrawPanel(shape, 20, 500, 20, 400);
+        return x-SIDE/2;
+    }
+    
+    public int getYMin()
+    {
+        return y-SIDE/2;
+    }
+    
+    public int getXMax()
+    {
+        return x+SIDE/2;
+    }
+    
+    public int getYMax()
+    {
+        return y+SIDE/2;
+    }
+    
+    public static void main (String args[])
+    {
+        Shape shape = new DarkSideOfTheMoon(256, 256);
+        DrawPanel panel = new DrawPanel(shape, shape.getXMin(), shape.getXMax(), shape.getYMin(), shape.getYMax());
     }
 
 }

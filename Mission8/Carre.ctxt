@@ -5,4 +5,6 @@ comment0.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ {@code\ Carre}\ de\ couleur\ {@c
 comment1.params=x\ y\ side
 comment1.target=Carre(int,\ int,\ int)
 comment1.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ {@code\ Carre}\ noir\ et\ de\ cote\ {@code\ side}\n\ situ\u00E9\ au\ coin\ ({@code\ x},\ {@code\ y})\n
-numComments=2
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

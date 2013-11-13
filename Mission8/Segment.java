@@ -26,12 +26,28 @@ public class Segment implements Shape
         this.y1=y1;
     }
     
-    // voir interface Shape
     public void draw(Graphics g)
     {
-        // affichage du segment de droite
         g.drawLine(x0,y0,x1,y1);
     }
-
-    // A COMPLETER
+    
+    public int getXMin()
+    {
+        return Math.min(x0, x1);
+    }
+    
+    public int getYMin()
+    {
+        return Math.min(y0, y1);
+    }
+    
+    public int getXMax()
+    {
+        return Math.max(x0, x1);
+    }
+    
+    public int getYMax()
+    {
+        return Math.max(y0, y1);
+    }
 }

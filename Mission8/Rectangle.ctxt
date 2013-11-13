@@ -1,11 +1,21 @@
 #BlueJ class context
 comment0.params=x1\ y1\ x2\ y2\ color
 comment0.target=Rectangle(int,\ int,\ int,\ int,\ java.awt.Color)
-comment0.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ {@code\ Rectangle}\ de\ couleur\ {@code\ color}\n\ dont\ les\ coins\ sont\ les\ points\ ({@code\ x1},\ {@code\ y1})\ et\ ({@code\ x2},\ {@code\ y2})\n
+comment0.text=\n\ @pre\ \ 0\ <\=\ x1\ <\ x2\ <\=\ 512\n\ \ \ \ \ \ \ 0\ <\=\ y1\ <\ y2\ <\=\ 512\n\ @post\ cree\ un\ {@code\ Rectangle}\ de\ couleur\ {@code\ color}\n\ dont\ les\ coins\ sont\ les\ points\ ({@code\ x1},\ {@code\ y1})\ et\ ({@code\ x2},\ {@code\ y2})\n
 comment1.params=x1\ y1\ x2\ y2
 comment1.target=Rectangle(int,\ int,\ int,\ int)
-comment1.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ {@code\ Rectangle}\ noir\n\ dont\ les\ coins\ sont\ les\ points\ ({@code\ x1},\ {@code\ y1})\ et\ ({@code\ x2},\ {@code\ y2})\n
+comment1.text=\n\ @pre\ \ 0\ <\=\ x1\ <\ x2\ <\=\ 512\n\ \ \ \ \ \ \ 0\ <\=\ y1\ <\ y2\ <\=\ 512\n\ @post\ cree\ un\ {@code\ Rectangle}\ noir\n\ dont\ les\ coins\ sont\ les\ points\ ({@code\ x1},\ {@code\ y1})\ et\ ({@code\ x2},\ {@code\ y2})\n
 comment2.params=g
 comment2.target=void\ draw(java.awt.Graphics)
 comment2.text=\n\ @pre\ \ {@code\ g}\ est\ initialise\n\ @post\ dessine\ un\ rectangle\ sur\ {@code\ g}.\n
-numComments=3
+comment3.params=
+comment3.target=int\ getXMin()
+comment4.params=
+comment4.target=int\ getYMin()
+comment5.params=
+comment5.target=int\ getXMax()
+comment6.params=
+comment6.target=int\ getYMax()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

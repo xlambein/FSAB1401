@@ -1,6 +1,12 @@
 import java.awt.Graphics;
 import java.awt.Color;
 
+/**
+ * Un triangle equialteral de couleur
+ * 
+ * @author Xavier Lambein & Victor Lecomte
+ * @version 2013-11-14
+ */
 class Equilateral extends Triangle
 {
     /**
@@ -34,5 +40,11 @@ class Equilateral extends Triangle
     public Equilateral(int cx, int cy, int radius, double angle)
     {
         this(cx, cy, radius, angle, Color.BLACK);
+    }
+    
+    public static void main (String args[])
+    {
+        Shape shape = new Equilateral(256, 256, 100, Math.PI*5/12, Color.RED);
+        DrawPanel panel = new DrawPanel(shape, shape.getXMin(), shape.getXMax(), shape.getYMin(), shape.getYMax());
     }
 }

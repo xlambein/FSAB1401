@@ -45,10 +45,30 @@ public class MyShape implements Shape
         }        
     }
     
+    public int getXMin()
+    {
+        return 20;
+    }
+    
+    public int getYMin()
+    {
+        return 20;
+    }
+    
+    public int getXMax()
+    {
+        return 500;
+    }
+    
+    public int getYMax()
+    {
+        return 400;
+    }
+    
     public static void main (String args[])
     {
-        DarkSideOfTheMoon shape = new DarkSideOfTheMoon(200, 200);
-        DrawPanel panel = new DrawPanel(shape, 20, 500, 20, 400);
+        Shape shape = new MyShape(20);
+        DrawPanel panel = new DrawPanel(shape, shape.getXMin(), shape.getXMax(), shape.getYMin(), shape.getYMax());
     }
 
 }

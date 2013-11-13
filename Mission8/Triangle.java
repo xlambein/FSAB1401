@@ -1,6 +1,12 @@
 import java.awt.Graphics;
 import java.awt.Color;
 
+/**
+ * Un triangle de couleur
+ * 
+ * @author Xavier Lambein & Victor Lecomte
+ * @version 2013-11-14
+ */
 class Triangle implements Shape
 {
     private int x1;
@@ -46,5 +52,31 @@ class Triangle implements Shape
         (new Segment(x1, y1, x2, y2)).draw(g);
         (new Segment(x2, y2, x3, y3)).draw(g);
         (new Segment(x3, y3, x1, y1)).draw(g);
+    }
+    
+    public int getXMin()
+    {
+        return Math.min(Math.min(x1, x2), x3);
+    }
+    
+    public int getYMin()
+    {
+        return Math.min(Math.min(y1, y2), y3);
+    }
+    
+    public int getXMax()
+    {
+        return Math.max(Math.max(x1, x2), x3);
+    }
+    
+    public int getYMax()
+    {
+        return Math.max(Math.max(y1, y2), y3);
+    }
+    
+    public static void main (String args[])
+    {
+        Shape shape = new Triangle(50, 50, 50, 100, 82, 50, Color.CYAN);
+        DrawPanel panel = new DrawPanel(shape, shape.getXMin(), shape.getXMax(), shape.getYMin(), shape.getYMax());
     }
 }

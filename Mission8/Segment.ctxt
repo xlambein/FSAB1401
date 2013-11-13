@@ -4,4 +4,12 @@ comment0.target=Segment(int,\ int,\ int,\ int)
 comment0.text=\n\ @pre\ x0,y0,x1,y1\ >\=0\ et\ <512\n\ @post\ a\ construit\ un\ segment\ de\ droite\ reliant\ x0,y0\ a\ x1,y1\n
 comment1.params=g
 comment1.target=void\ draw(java.awt.Graphics)
-numComments=2
+comment2.params=
+comment2.target=int\ getXMin()
+comment3.params=
+comment3.target=int\ getYMin()
+comment4.params=
+comment4.target=int\ getXMax()
+comment5.params=
+comment5.target=int\ getYMax()
+numComments=6
