@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=cx\ cy\ radius\ angle\ color
+comment0.target=Equilateral(int,\ int,\ int,\ double,\ java.awt.Color)
+comment0.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ {@code\ Equilateral}\ de\ couleur\ {@code\ color}\ inscrit\ dans\ le\ cercle\ de\ centre\n\ ({@code\ cx},\ {@code\ cy})\ et\ de\ rayon\ {@code\ radius},\ dont\ l'un\ des\ sommets\ est\ \u00E0\ un\ angle\n\ {@code\ angle}\ en\ radians,\ dans\ le\ sens\ trigonom\u00E9trique.\n
+comment1.params=cx\ cy\ radius\ angle
+comment1.target=Equilateral(int,\ int,\ int,\ double)
+comment1.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ {@code\ Equilateral}\ noir\ inscrit\ dans\ le\ cercle\ de\ centre\ ({@code\ cx},\ {@code\ cy})\n\ de\ rayon\ {@code\ radius},\ dont\ l'un\ des\ sommets\ est\ \u00E0\ un\ angle\ {@code\ angle}\ dans\ le\ sens\n\ trigonom\u00E9trique.\n
+numComments=2

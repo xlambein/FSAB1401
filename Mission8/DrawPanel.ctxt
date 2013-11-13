@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=shape
+comment0.target=DrawPanel(Shape)
+comment0.text=\n\ @pre\ \ {@code\ Shape\ \!\=\ null}\n\ @post\ cree\ et\ affiche\ une\ fenetre\ contenant\ {@code\ shape},\ sans\ cadre.\n
+comment1.params=shape\ xmin\ xmax\ ymin\ ymax
+comment1.target=DrawPanel(Shape,\ int,\ int,\ int,\ int)
+comment1.text=\n\ @pre\ \ {@code\ Shape\ \!\=\ null,\ xmin\ <\=\ xmax,\ ymin\ <\=\ ymax}\n\ @post\ cree\ et\ affiche\ une\ fenetre\ contenant\ {@code\ shape},\ \n\ \ \ \ \ \ \ avec\ un\ cadre\ de\ limites\ interieures\ {@code\ xmin,\ xmax,\ ymin,\ ymax}.\n
+comment2.params=g
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment2.text=\n\ @pre\ \ {@code\ g}\ a\ ete\ initialise\ prealablement.\n\ @post\ paint\ le\ dessin\ sur\ {@code\ g}.\n
+comment3.params=g\ x\ y\ w\ h
+comment3.target=void\ paintFrame(java.awt.Graphics,\ int,\ int,\ int,\ int)
+comment3.text=\n\ @pre\ \ {@code\ w\ >\ 0,\ h\ >\ 0}\n\ @post\ paint\ un\ cadre\ de\ coin\ sup\uFFFDrieur\ gauche\ {@code\ (x,y)}\ et\ de\ dimensions\ {@code\ (w,h)}.\n
+numComments=4

@@ -1,0 +1,6 @@
+Mission8
+{
+.file.include = *.java, README.TXT;
+.file.jar =Mission8.zip;
+.transport = http://submittp.info.ucl.ac.be/cgi-bin/submittp.py?cid=FSAB1401&tpid=Mission8&email=<address>;
+}

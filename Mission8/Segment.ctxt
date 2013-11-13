@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=x0\ y0\ x1\ y1
+comment0.target=Segment(int,\ int,\ int,\ int)
+comment0.text=\n\ @pre\ x0,y0,x1,y1\ >\=0\ et\ <512\n\ @post\ a\ construit\ un\ segment\ de\ droite\ reliant\ x0,y0\ a\ x1,y1\n
+comment1.params=g
+comment1.target=void\ draw(java.awt.Graphics)
+numComments=2

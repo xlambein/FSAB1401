@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyShape()
+comment0.text=\n\ @pre\ \ ---\n\ @post\ cree\ un\ {@code\ MyShape}\ de\ 10\ intervalles\n
+comment1.params=n
+comment1.target=MyShape(int)
+comment1.text=\n\ @pre\ \ {@code\ n\ >\ 0}\n\ @post\ cree\ un\ {@code\ MyShape}\ de\ {@code\ n}\ intervalles\n
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment2.text=\n\ @pre\ \ {@code\ g}\ est\ initialise\n\ @post\ dessine\ cette\ figure\ sur\ {@code\ g}.\ \n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

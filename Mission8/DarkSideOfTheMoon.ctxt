@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=DarkSideOfTheMoon(int,\ int)
+comment0.text=\n\ @pre\ \ -\n\ @post\ cree\ un\ {@code\ DarkSideOfTheMoon}\ centr\u00E9\ au\ point\ ({@code\ x},\ {@code\ y})\n
+comment1.params=g\ x1\ y1\ x2\ y2\ n\ color
+comment1.target=void\ drawLines(java.awt.Graphics,\ int,\ int,\ int,\ int,\ int,\ java.awt.Color)
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment2.text=\n\ @pre\ \ {@code\ g}\ est\ initialise\n\ @post\ dessine\ cette\ figure\ sur\ {@code\ g}.\ \n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
